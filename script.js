@@ -15,6 +15,11 @@ while(r < arr.length){
 	if(sum > n){
 		
 		result.push(ans);
+
+		while(ans.length != 0){
+			ans.pop();
+			
+		}
 		
 		while(l != r){
 			sum -= arr[l];
@@ -32,3 +37,6 @@ return result;
 
 const n = prompt("Enter n: ");
 alert(JSON.stringify(divide(arr, n)));
+
+
+
